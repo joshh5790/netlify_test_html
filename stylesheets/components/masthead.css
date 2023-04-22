@@ -1,0 +1,88 @@
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+            "menu-and-search . action"
+            ". technologies ."
+            "date logo paper";
+}
+
+.menu-and-search {
+    grid-area: menu-and-search;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.action {
+    grid-area: action;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.technologies {
+    grid-area: technologies;
+    display: flex;
+    justify-content: center;
+}
+
+.date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 1px solid #f7f7f5;
+    padding-bottom: 11px;
+    border-top: 1px solid #f7f7f5;
+}
+
+.logo {
+    grid-area: logo;
+    text-align: center;
+    padding-top: 15px;
+    border-bottom: 1px solid #f7f7f5;
+    padding-bottom: 11px;
+    border-top: 1px solid #f7f7f5;
+}
+
+.paper {
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 1px solid #f7f7f5;
+    padding-bottom: 11px;
+    border-top: 1px solid #f7f7f5;
+}
+
+.menu-icon,
+.search-icon {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.CSS,
+.HTML,
+.JS,
+.Python {
+    font-size: 10px;
+    color: #6f6f6f;
+}
+
+.little-tech {
+    position: relative;
+    top: 1px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #f7f7f5;
+    border-bottom: none;
+    background-color: white;
+    border-radius: 2px;
+}
